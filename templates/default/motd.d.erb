@@ -1,0 +1,3 @@
+<%- Array(@message).join("\n").scan(/.{1,74}/).each do |line| %>
+*  <%=line.ljust(74)%>  *
+<%- end %>
