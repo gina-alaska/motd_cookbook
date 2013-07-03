@@ -5,7 +5,7 @@ motd "one" do
 end
 
 motd "array" do
-  message 100.times.collect{ "lorem ipsum array"}
+  message 10.times.collect{ "lorem ipsum array"}
 end
 
 motd "title with space" do
@@ -13,5 +13,9 @@ motd "title with space" do
 end
 
 motd "Reallylongmessage" do
-  message 500.times.collect{ "slkdjfas"}.join
+  message 50.times.collect{ "slkdjfas"}.join
+end
+
+motd "/etc/create_a_bad_file" do
+  message "I created a file where I shouldn't have"
 end
